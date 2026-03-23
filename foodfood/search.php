@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Design/css/search.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Design/css/navbar1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Design/css/login1.css">
+    <link rel="stylesheet" href="./Design/css/index.css">
+</head>
+<body>
+
+  <?php include './componentt/header.php'; ?>
+
+    <div class="container1">
+        <div class="newFlex">
+    <div class="input-group rounded classFlex">
+        <input type="text" onkeyup="searchBtn()" class="form-control rounded" id="searchText" placeholder="Search for restaurants" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search" id="showSearch"></i>
+          <i class="fas fa-close" id="showClose"></i>
+        </span>
+      </div>
+        </div>
+      <div id="showRestaurants">
+
+      </div>
+      <div id="popular">
+<p id="pop">Popular Restaurants</p>
+<div id="displayRestaurants"></div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <?php include './componentt/footer.php'; ?>
+</body>
+
+<script src="./Design/js/search.js" type=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/977289aa03.js" crossorigin="anonymous"></script>
+
+<script src="./Design/js/login1.js" type=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4d1e521af4.js" crossorigin="anonymous"></script>
+
+</html>
